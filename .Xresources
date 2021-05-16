@@ -1,0 +1,49 @@
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+xterm*loginshell: true
+
+xterm*savelines: 2048
+
+! double-click to select whole URLs
+xterm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! Colors
+xterm*background: #131313
+xterm*foreground: #fafafa
+
+! Black
+xterm*color0:	#131313
+xterm*color8:	#666666
+! Red
+xterm*color1:	#d7005f
+xterm*color9:	#e1649d
+! Green
+xterm*color2:	#5fff6a
+xterm*color10:	#9dff9d
+! Yellow
+xterm*color3:	#ffff5f
+xterm*color11:	#ffffaf
+! Blue
+xterm*color4:	#0087ff
+xterm*color12:	#4dd6ff
+! Magenta
+xterm*color5:	#a769c6
+xterm*color13:	#dfafff
+! Cyan
+xterm*color6:	#00bdbd
+xterm*color14:	#59ffff
+! White
+xterm*color7:	#b5b5b5
+xterm*color15:	#fafafa
+
+! Tried to enable Copy Paste shortcuts... Did not work
+!XTerm.vt100.tranlations: #override \
+!    Shift Ctrl <Key>c: copy-selection(CLIPBOARD) \n\
+!    Shift Ctrl <Key>v: insert-selection(CLIPBOARD) \n\
+!   ~Shift Ctrl <KeyPress>c: string(Ox03) \n\
+!   ~Shift Ctrl <KeyPress>v: string(0x16)
+
+
+! selected text can be pasted with Ctrl+V into GUI applications
+XTerm.vt100.selectToClipboard: true
+
